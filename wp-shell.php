@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: WP Shell
+ * Description: Adds a WordPress admin page with a PHP shell app powered by [p0wny-shell](https://github.com/flozz/p0wny-shell).
  * Author: Juan Pablo Juliao
  * Author URI: jpjuliao.com
  * Version: 1.0
