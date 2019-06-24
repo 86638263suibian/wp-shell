@@ -39,10 +39,12 @@ class Jpjuliao_WP_Shell {
      * @return void
      */
     public function submenu_page_callback() {
-        echo '<div class="wrap">';
-        echo '<h2>WP Shell</h2>';
-        echo '<iframe src="/wp-admin/tools.php?page=wp-shell&p0wnyshell">';
-        echo '</div>';
+        echo '
+        <div class="wrap">
+            <h2>WP Shell</h2>
+            <iframe style="width: 100%; height: 450px;"
+                    src="/wp-admin/tools.php?page=wp-shell&p0wnyshell">
+        </div>';
     }
 
     /**
