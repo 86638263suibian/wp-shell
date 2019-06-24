@@ -132,6 +132,7 @@ if (isset($_GET["feature"])) {
 
             #shell-content {
                 height: 500px;
+                max-height: 280px;
                 overflow: auto;
                 padding: 5px;
                 white-space: pre-wrap;

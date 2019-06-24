@@ -44,6 +44,7 @@ class Jpjuliao_WP_Shell {
             <h2>WP Shell</h2>
             <iframe style="width: 100%; height: 450px;"
                     src="/wp-admin/tools.php?page=wp-shell&p0wnyshell">
+            </iframe>
             <a href="/wp-admin/tools.php?page=wp-shell&p0wnyshell" target="_blank">
                 Open in new tab.
             </a>
