@@ -48,7 +48,9 @@ class Jpjuliao_WP_Shell {
             <a href="/wp-admin/tools.php?page=wp-shell&p0wnyshell" target="_blank">
                 Open in new tab.
             </a>
-            <p>Developed by Juan Pablo Juliao <a href="//twitter.com/jpjuliaor">@jpjuliaor</a></p>
+            <p>Developed by Juan Pablo Juliao 
+                <a target="_blank" href="//twitter.com/jpjuliaor">@jpjuliaor</a>
+            </p>
         </div>';
     }
 
