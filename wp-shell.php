@@ -41,7 +41,7 @@ class Jpjuliao_WP_Shell {
     public function submenu_page_callback() {
         echo '<div class="wrap">';
         echo '<h2>WP Shell</h2>';
-        echo '<iframe src="/wp-admin/tools.php?page=wp-shell&shell">';
+        echo '<iframe src="/wp-admin/tools.php?page=wp-shell&p0wnyshell">';
         echo '</div>';
     }
 
@@ -52,7 +52,7 @@ class Jpjuliao_WP_Shell {
     public function shell_page($screen) {
         if (
             $screen->id != 'tools_page_wp-shell'
-            || !isset($_GET['shell'])
+            || !isset($_GET['p0wnyshell'])
         ) {
             return;
         };
