@@ -6,7 +6,7 @@
  * Version: 1.0
  */
 
-if ( !definde('ABSPATH') ) exit;
+if ( !defined('ABSPATH') ) exit;
 
 class Jpjuliao_WP_Shell {
  
