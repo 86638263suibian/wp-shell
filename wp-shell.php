@@ -42,7 +42,6 @@ class Jpjuliao_WP_Shell {
         echo '<div class="wrap">';
         echo '<h2>WP Shell</h2>';
         echo '<iframe src="/?shell">';
-        include 'p0wny-shell/shell.php';
         echo '</div>';
     }
 
@@ -51,8 +50,14 @@ class Jpjuliao_WP_Shell {
      * @return void
      */
     public function shell_page($screen) {
-        if (!isset($_GET['shell'])) return;
-        var_dump($screen);
+        if (
+            $screen->id != 'tools_page_wp-shell'
+            || !isset($_GET['shell'])
+        ) {
+            return;
+        };
+        include 'p0wny-shell/shell.php';
+        exit;
     }
  
 }
