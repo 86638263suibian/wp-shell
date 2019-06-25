@@ -60,6 +60,7 @@ class Jpjuliao_WP_Shell {
                                 'resizable=no',
                                 'toolbar=no',
                                 'menubar=no',
+                                'width=600',
                                 'height=350',
                                 'top=0',
                                 'bottom=0'
