@@ -58,7 +58,15 @@ class Jpjuliao_WP_Shell {
                             open(
                                 '/wp-admin/tools.php?page=wp-shell&p0wnyshell', 
                                 'WP Shell', 
-                                'toolbar=no,menubar=no,height=350'
+                                implode(',', [
+                                    'scrollbars=no',
+                                    'resizable=no',
+                                    'toolbar=no',
+                                    'menubar=no',
+                                    'height=350',
+                                    'top=0',
+                                    'bottom=0'
+                                ])
                             );
                         });
                     });
