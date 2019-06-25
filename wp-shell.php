@@ -40,19 +40,35 @@ class Jpjuliao_WP_Shell {
      * @return void
      */
     public function submenu_page_callback() {
-        echo '
+        ?>
         <div class="wrap">
             <h2>WP Shell</h2>
             <iframe style="width: 100%; height: 450px;"
                     src="/wp-admin/tools.php?page=wp-shell&p0wnyshell">
             </iframe>
-            <a href="/wp-admin/tools.php?page=wp-shell&p0wnyshell" target="_blank">
+            <!-- <a href="/wp-admin/tools.php?page=wp-shell&p0wnyshell" target="_blank">
                 Open in new tab.
-            </a>
+            </a> -->
+            <button id="popup-shell">Open in new window</button>
+            <script>
+                !(function(){
+                    'use strict';
+                    jQuery(document).ready(function($){
+                        $('#popup-shell').click(function(){
+                            open(
+                                '/wp-admin/tools.php?page=wp-shell&p0wnyshell', 
+                                'WP Shell', 
+                                'toolbar=no,menubar=no'
+                            );
+                        });
+                    });
+                })();
+            </script>
             <p>Developed by Juan Pablo Juliao 
                 <a target="_blank" href="//twitter.com/jpjuliaor">@jpjuliaor</a>
             </p>
-        </div>';
+        </div>
+        <?php
     }
 
     /**
