@@ -55,18 +55,19 @@ class Jpjuliao_WP_Shell {
                     'use strict';
                     jQuery(document).ready(function($){
                         $('#popup-shell').click(function(){
+                            let params = [
+                                'scrollbars=no',
+                                'resizable=no',
+                                'toolbar=no',
+                                'menubar=no',
+                                'height=350',
+                                'top=0',
+                                'bottom=0'
+                            ];
                             open(
                                 '/wp-admin/tools.php?page=wp-shell&p0wnyshell', 
                                 'WP Shell', 
-                                implode(',', [
-                                    'scrollbars=no',
-                                    'resizable=no',
-                                    'toolbar=no',
-                                    'menubar=no',
-                                    'height=350',
-                                    'top=0',
-                                    'bottom=0'
-                                ])
+                                params.join(',')
                             );
                         });
                     });
