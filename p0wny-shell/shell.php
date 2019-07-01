@@ -16,7 +16,7 @@ function featureShell($cmd, $cwd) {
     } else {
         chdir($cwd);
         $cmd = stripslashes($cmd);
-        exec($cmd, $stdout);
+        shell_exec($cmd, $stdout);
     }
 
     return array(
